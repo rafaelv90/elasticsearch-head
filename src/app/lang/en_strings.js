@@ -1,5 +1,5 @@
 i18n.setKeys({
-	"General.Elasticsearch": "Elasticsearch",
+	"General.Elasticsearch": "Elasticsearch Header",
 	"General.LoadingAggs": "Loading Aggregations...",
 	"General.Searching": "Searching...",
 	"General.Search": "Search",

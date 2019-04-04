@@ -1758,10 +1758,10 @@
 		},
 		_main_template: function() {
 			return { tag: "DIV", cls: "uiToolbar", children: [
-				{ tag: "DIV", cls: "pull-left", children: [
+				{ tag: "DIV", children: [
 					{ tag: "H2", text: this.config.label }
 				].concat(this.config.left) },
-				{ tag: "DIV", cls: "pull-right", children: this.config.right }
+				{ tag: "DIV", cls: "pullRight", children: this.config.right }
 			]};
 		}
 	});
@@ -1961,7 +1961,7 @@
 			return { tag: "LI", cls: "uiMenuPanel-item" + (item.disabled ? " disabled" : "") + (item.selected ? " selected" : ""), children: [ $.extend({ tag: "DIV", cls: "uiMenuPanel-label" }, item, dx ) ] };
 		},
 		_getPosition: function(jEv) {
-			var right = !! $(jEv.target).parents(".pull-right").length;
+			var right = !! $(jEv.target).parents(".pullRight").length;
 			var parent = $(jEv.target).closest("BUTTON");
 			return parent.vOffset()
 				.addY(parent.vSize().y)
@@ -4209,18 +4209,19 @@
 				this.nameEl.text( name );
 				this.statEl
 					.text( i18n.text("Header.ClusterHealth", colour, shards.successful, shards.total ) )
-					.css( "background", colour );
+					.removeClass("blue")
+					.addClass(colour);
 			}.bind(this));
-			this.statEl.text( i18n.text("Header.ClusterNotConnected") ).css("background", "grey");
+			this.statEl.text(i18n.text("Header.ClusterNotConnected")).addClass("blue");
 			this._clusterState.refresh();
 		},
 		_main_template: function() { return (
 			{ tag: "DIV", cls: this._baseCls, children: [
+				{ tag: "H1", text: i18n.text("General.Elasticsearch") },
 				this._clusterConnect,
 				{ tag: "SPAN", cls: "uiHeader-name" },
 				{ tag: "SPAN", cls: "uiHeader-status" },
-				{ tag: "H1", text: i18n.text("General.Elasticsearch") },
-				{ tag: "SPAN", cls: "pull-right", children: [
+				{ tag: "SPAN", cls: "pullRight", children: [
 					this._quickMenu
 				] }
 			] }

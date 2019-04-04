@@ -1,10 +1,30 @@
 .uiHeader {
 	padding: 3px 10px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
 }
 
-.uiHeader-name, .uiHeader-status {
+.uiHeader-name {
 	font-size: 1.2em;
-	font-weight: bold;
+	font-weight: lighter;
 	padding: 0 10px;
 }
 
+.uiHeader-status {
+	padding: 5px 10px;
+	text-transform: uppercase;
+	color: #fff;
+	font-weight: bold;
+}
+
+.uiHeader-status.blue { background: #5191fd; }
+.uiHeader-status.green { background: #0da921; }
+.uiHeader-status.yellow { background: #f6a615; }
+.uiHeader-status.red { background: #e82a37; }
+
+.pullRight {
+	margin-left: auto;
+	margin-right: 0px;
+	display: block;
+}

@@ -1,5 +1,5 @@
 i18n.setKeys({
-	"General.Elasticsearch": "Elasticsearch",
+	// "General.Elasticsearch": "Elasticsearch",
 	"General.LoadingAggs": "讀取聚合查詢...",
 	"General.Searching": "搜尋中...",
 	"General.Search": "搜尋",

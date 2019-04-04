@@ -1,5 +1,5 @@
 i18n.setKeys({
-	"General.Elasticsearch": "Elasticsearch",
+	// "General.Elasticsearch": "Elasticsearch",
 	"General.LoadingAggs": "Gruplar Yükleniyor...",
 	"General.Searching": "Aranıyor...",
 	"General.Search": "Ara",

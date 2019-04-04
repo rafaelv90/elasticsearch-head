@@ -119,29 +119,34 @@ TABLE.table H3 {
 }
 
 .uiToolbar {
-	height: 28px;
 	background: #fdfefe;
 	background: -moz-linear-gradient(top, #fdfefe, #eaedef);
 	background: -webkit-linear-gradient(top, #fdfefe, #eaedef);
 	border-bottom: 1px solid #d2d5d7;
-	padding: 3px 10px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	flex-wrap: wrap;
+	padding: 5px;
+}
+
+.uiToolbar > div {
+	display: flex;
+	align-items: center;
 }
 
 .uiToolbar H2 {
 	display: inline-block;
-	font-size: 120%;
-	margin: 0;
-	padding: 5px 20px 5px 0;
-}
-
-.uiToolbar .uiTextField {
-	display: inline-block;
+	font-size: 1.3em;
+	margin-right: 10px;
 }
 
 .uiToolbar .uiTextField INPUT {
-	padding-top: 2px;
-	padding-bottom: 5px;
+	padding: 6px;
+	font-size: 1.2em;
+	color: #546e7a;
 }
+
 #uiModal {
 	background: black;
 }
@@ -631,7 +636,20 @@ SPAN.uiJsonPretty-boolean { color: purple; }
 
 
 .uiClusterConnect-uri {
-	width: 280px;
+	width: 380px;
+	padding: 8px;
+	font-size: 12px;
+	color: #546e7a;
+	border: none;
+}
+
+.uiClusterConnect button {
+	padding: 8px;
+	text-transform: uppercase;
+	border: none;
+	background-color: #2196f3;
+	margin-left: 0px;
+	color: #ffffff;
 }
 
 .uiStructuredQuery {
@@ -654,32 +672,55 @@ SPAN.uiJsonPretty-boolean { color: purple; }
 
 .uiHeader {
 	padding: 3px 10px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
 }
 
-.uiHeader-name, .uiHeader-status {
+.uiHeader-name {
 	font-size: 1.2em;
-	font-weight: bold;
+	font-weight: lighter;
 	padding: 0 10px;
 }
 
+.uiHeader-status {
+	padding: 5px 10px;
+	text-transform: uppercase;
+	color: #fff;
+	font-weight: bold;
+}
+
+.uiHeader-status.blue { background: #5191fd; }
+.uiHeader-status.green { background: #0da921; }
+.uiHeader-status.yellow { background: #f6a615; }
+.uiHeader-status.red { background: #e82a37; }
+
+.pullRight {
+	margin-left: auto;
+	margin-right: 0px;
+	display: block;
+}
+
+.uiApp {
+	display: flex;
+	flex-direction: column;
+	font-family: 'Roboto', sans-serif;
+}
 
 .uiApp-header {
 	background: #eee;
-	position: fixed;
+	position: relative;
 	width: 100%;
-	z-index: 9;
 }
 
 .uiApp-header H1 {
-	margin: -2px 0 -4px 0;
-	float: left;
-	padding-right: 25px;
+	font-size: 2em;
+	margin-right: 20px;
 }
 
 .uiApp-headerMenu {
-	border-bottom: 1px solid #bbb;
 	padding: 0px 3px;
-	height: 22px;
+	display: flex;
 }
 
 .uiApp-headerMenu .active {
@@ -688,15 +729,14 @@ SPAN.uiJsonPretty-boolean { color: purple; }
 }
 
 .uiApp-headerMenuItem {
-	border: 1px solid #bbb;
-	padding: 4px 8px 1px ;
+	/* border: 1px solid #bbb; */
+	padding: 10px 15px;
 	margin: 2px 1px 0;
 	height: 14px;
 	cursor: pointer;
 }
 
 .uiApp-body {
-	padding: 51px 0px 0px 0px;
 }
 
 .uiApp-headerNewMenuItem {

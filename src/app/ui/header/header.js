@@ -52,18 +52,19 @@
 				this.nameEl.text( name );
 				this.statEl
 					.text( i18n.text("Header.ClusterHealth", colour, shards.successful, shards.total ) )
-					.css( "background", colour );
+					.removeClass("blue")
+					.addClass(colour);
 			}.bind(this));
-			this.statEl.text( i18n.text("Header.ClusterNotConnected") ).css("background", "grey");
+			this.statEl.text(i18n.text("Header.ClusterNotConnected")).addClass("blue");
 			this._clusterState.refresh();
 		},
 		_main_template: function() { return (
 			{ tag: "DIV", cls: this._baseCls, children: [
+				{ tag: "H1", text: i18n.text("General.Elasticsearch") },
 				this._clusterConnect,
 				{ tag: "SPAN", cls: "uiHeader-name" },
 				{ tag: "SPAN", cls: "uiHeader-status" },
-				{ tag: "H1", text: i18n.text("General.Elasticsearch") },
-				{ tag: "SPAN", cls: "pull-right", children: [
+				{ tag: "SPAN", cls: "pullRight", children: [
 					this._quickMenu
 				] }
 			] }
