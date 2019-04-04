@@ -1,5 +1,6 @@
 .uiTable TABLE {
 	border-collapse: collapse;
+	width: 100%;
 }
 
 .uiTable-body {

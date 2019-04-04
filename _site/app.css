@@ -33,43 +33,35 @@ TABLE.table H3 {
 
 .uiButton-content {
 	height: 20px;
-	border: 1px solid #668dc6;
 	border-radius: 2px;
-	background: #96c6eb;
-	background: -moz-linear-gradient(top, #96c6eb, #5296c7);
-	background: -webkit-linear-gradient(top, #96c6eb, #5296c7);
+	background: #2196f3;
 	color: white;
 	font-weight: bold;
+	padding: 4px;
 }
 
 .moz .uiButton-content { margin: 0 -2px; }
 
 .uiButton-label {
-		padding: 2px 6px;
-		white-space: nowrap;
+	padding: 2px 6px;
+	white-space: nowrap;
 }
 .uiButton:hover .uiButton-content {
-	background: #2777ba;
-	background: -moz-linear-gradient(top, #6aaadf, #2777ba);
-	background: -webkit-linear-gradient(top, #6aaadf, #2777ba);
+	background: #1976d2;
 }
 .uiButton.active .uiButton-content,
 .uiButton:active .uiButton-content {
-	background: #2575b7;
-	background: -moz-linear-gradient(top, #2576b8, #2575b7);
-	background: -webkit-linear-gradient(top, #2576b8, #2575b7);
+	background: #1565c0;
 }
 .uiButton.disabled .uiButton-content,
 .uiButton.disabled:active .uiButton-content {
-		border-color: #c6c6c6;
-		color: #999999;
-		background: #ddd;
-		background: -moz-linear-gradient(top, #ddd, #ddd);
-		background: -webkit-linear-gradient(top, #ddd, #ddd);
+	border-color: #c6c6c6;
+	color: #999999;
+	background: #ddd;
 }
 
 .uiButton.disabled {
-		cursor: default;
+	cursor: default;
 }
 
 .uiMenuButton {
@@ -139,6 +131,7 @@ TABLE.table H3 {
 	display: inline-block;
 	font-size: 1.3em;
 	margin-right: 10px;
+	color: #455a64;
 }
 
 .uiToolbar .uiTextField INPUT {
@@ -231,19 +224,18 @@ TABLE.table H3 {
 }
 
 .uiMenuPanel {
-	border: 1px solid #668dc6;
+	border: 1px solid #b0bec5;
 	position: absolute;
-	background: #96c6eb;
+	background: #90a4ae;
 	color: white;
 }
 
 .uiMenuPanel LI {
 	list-style: none;
-	border-bottom: 1px solid #668dc6;
 }
 
 .uiMenuPanel LI:hover {
-	background: #2575b7;
+	background: #546e7a;
 }
 
 .uiMenuPanel LI:last-child {
@@ -252,13 +244,13 @@ TABLE.table H3 {
 
 .uiMenuPanel-label {
 	white-space: nowrap;
-	padding: 2px 10px 2px 10px;
 	cursor: pointer;
+	padding: 5px 10px;
 }
 
 .disabled .uiMenuPanel-label {
 	cursor: auto;
-	color: #888;
+	color: #666;
 }
 
 .uiSelectMenuPanel .uiMenuPanel-label {
@@ -275,6 +267,7 @@ TABLE.table H3 {
 
 .uiTable TABLE {
 	border-collapse: collapse;
+	width: 100%;
 }
 
 .uiTable-body {

@@ -1,17 +1,16 @@
 .uiMenuPanel {
-	border: 1px solid #668dc6;
+	border: 1px solid #b0bec5;
 	position: absolute;
-	background: #96c6eb;
+	background: #90a4ae;
 	color: white;
 }
 
 .uiMenuPanel LI {
 	list-style: none;
-	border-bottom: 1px solid #668dc6;
 }
 
 .uiMenuPanel LI:hover {
-	background: #2575b7;
+	background: #546e7a;
 }
 
 .uiMenuPanel LI:last-child {
@@ -20,11 +19,11 @@
 
 .uiMenuPanel-label {
 	white-space: nowrap;
-	padding: 2px 10px 2px 10px;
 	cursor: pointer;
+	padding: 5px 10px;
 }
 
 .disabled .uiMenuPanel-label {
 	cursor: auto;
-	color: #888;
+	color: #666;
 }
