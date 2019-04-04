@@ -1,3 +1,7 @@
+.uiNodesView {
+	min-width: 400px;
+}
+
 .uiNodesView TH,
 .uiNodesView TD {
 	vertical-align: top;

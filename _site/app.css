@@ -38,6 +38,7 @@ TABLE.table H3 {
 	color: white;
 	font-weight: bold;
 	padding: 4px;
+	font-size: 1.1em;
 }
 
 .moz .uiButton-content { margin: 0 -2px; }
@@ -55,7 +56,6 @@ TABLE.table H3 {
 }
 .uiButton.disabled .uiButton-content,
 .uiButton.disabled:active .uiButton-content {
-	border-color: #c6c6c6;
 	color: #999999;
 	background: #ddd;
 }
@@ -267,7 +267,6 @@ TABLE.table H3 {
 
 .uiTable TABLE {
 	border-collapse: collapse;
-	width: 100%;
 }
 
 .uiTable-body {
@@ -536,6 +535,10 @@ SPAN.uiJsonPretty-boolean { color: purple; }
 	max-height: 100px;
 	overflow-x: hidden;
 	overflow-y: auto;
+}
+
+.uiNodesView {
+	min-width: 400px;
 }
 
 .uiNodesView TH,

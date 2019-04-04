@@ -15,6 +15,7 @@
 	color: white;
 	font-weight: bold;
 	padding: 4px;
+	font-size: 1.1em;
 }
 
 .moz .uiButton-content { margin: 0 -2px; }
@@ -32,7 +33,6 @@
 }
 .uiButton.disabled .uiButton-content,
 .uiButton.disabled:active .uiButton-content {
-	border-color: #c6c6c6;
 	color: #999999;
 	background: #ddd;
 }
