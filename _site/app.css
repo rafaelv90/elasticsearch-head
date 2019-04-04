@@ -646,6 +646,11 @@ SPAN.uiJsonPretty-boolean { color: purple; }
 	background-color: #2196f3;
 	margin-left: 0px;
 	color: #ffffff;
+	cursor: pointer;
+}
+
+.uiClusterConnect button:hover {
+	background-color: #1e88e5;
 }
 
 .uiStructuredQuery {
@@ -669,6 +674,7 @@ SPAN.uiJsonPretty-boolean { color: purple; }
 .uiHeader {
 	padding: 3px 10px;
 	display: flex;
+	flex-wrap: wrap;
 	flex-direction: row;
 	align-items: center;
 }

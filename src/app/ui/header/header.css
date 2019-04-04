@@ -1,6 +1,7 @@
 .uiHeader {
 	padding: 3px 10px;
 	display: flex;
+	flex-wrap: wrap;
 	flex-direction: row;
 	align-items: center;
 }
