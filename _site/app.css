@@ -226,7 +226,7 @@ TABLE.table H3 {
 .uiMenuPanel {
 	border: 1px solid #b0bec5;
 	position: absolute;
-	background: #90a4ae;
+	background: rgba(0, 0, 0, 0.8);
 	color: white;
 }
 
@@ -235,7 +235,7 @@ TABLE.table H3 {
 }
 
 .uiMenuPanel LI:hover {
-	background: #546e7a;
+	background: #1e88e5;
 }
 
 .uiMenuPanel LI:last-child {
@@ -245,7 +245,7 @@ TABLE.table H3 {
 .uiMenuPanel-label {
 	white-space: nowrap;
 	cursor: pointer;
-	padding: 5px 10px;
+	padding: 5px 40px 5px 25px;
 }
 
 .disabled .uiMenuPanel-label {
@@ -253,15 +253,11 @@ TABLE.table H3 {
 	color: #666;
 }
 
-.uiSelectMenuPanel .uiMenuPanel-label {
-	margin-left: 1em;
-	padding-left: 4px;
-}
-
 .uiSelectMenuPanel .uiMenuPanel-item.selected .uiMenuPanel-label:before {
 	content: "\2713";
 	width: 12px;
-	margin-left: -12px;
+	margin-left: -15px;
+	margin-right: 3px;
 	display: inline-block;
 }
 
@@ -537,10 +533,6 @@ SPAN.uiJsonPretty-boolean { color: purple; }
 	overflow-y: auto;
 }
 
-.uiNodesView {
-	min-width: 400px;
-}
-
 .uiNodesView TH,
 .uiNodesView TD {
 	vertical-align: top;
@@ -554,22 +546,17 @@ SPAN.uiJsonPretty-boolean { color: purple; }
 }
 
 .uiNodesView .uiMenuButton .uiButton-content {
-	padding-right: 3px;
-	border-radius: 8px;
-	height: 14px;
+	border-radius: 20px;
+	padding: 2px 4px;
 }
 
 .uiNodesView .uiMenuButton.active .uiButton-content,
 .uiNodesView .uiMenuButton:active .uiButton-content {
-	border-bottom-right-radius: 0px;
-	border-bottom-left-radius: 0px;
+	border-radius: 12px 12px 0 0;
 }
 
-.uiNodesView .uiMenuButton .uiButton-label {
-	padding: 0px 17px 0px 7px;
-}
-
-.uiNodesView-hasAlias {
+.uiNodesView TD.uiNodesView-hasAlias {
+	padding: 5px;
 	text-align: center;
 }
 .uiNodesView-hasAlias.max {
@@ -731,7 +718,6 @@ SPAN.uiJsonPretty-boolean { color: purple; }
 }
 
 .uiApp-headerMenuItem {
-	/* border: 1px solid #bbb; */
 	padding: 10px 15px;
 	margin: 2px 1px 0;
 	height: 14px;
@@ -742,5 +728,11 @@ SPAN.uiJsonPretty-boolean { color: purple; }
 }
 
 .uiApp-headerNewMenuItem {
-	color: blue;
+	color: #1e88e5;
+	font-size: 1.2em;
+}
+
+.uiApp-headerCloseMenuItem {
+	font-size: 1.2em;
+	color:  #e53935;
 }

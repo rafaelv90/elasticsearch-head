@@ -85,7 +85,7 @@
 				text: i18n.text("Nav." + type ) + " " + type_index,
 				onclick: function( ev ) { this.show( ref, ev ); }.bind(this),
 				children: [
-					{ tag: "A", text: " [-]", onclick: function (ev) {
+					{ tag: "A", cls: "uiApp-headerCloseMenuItem ", text: " [x]", onclick: function (ev) {
 						$tab.remove();
 						page.remove();
 						delete this.instances[ ref ];
@@ -116,10 +116,10 @@
 						{ tag: "DIV", cls: "uiApp-headerMenuItem pull-left", text: i18n.text("Nav.Indices"), onclick: this._openIndexOverview_handler },
 						{ tag: "DIV", cls: "uiApp-headerMenuItem pull-left", text: i18n.text("Nav.Browser"), onclick: this._openBrowser_handler },
 						{ tag: "DIV", cls: "uiApp-headerMenuItem pull-left", text: i18n.text("Nav.StructuredQuery"), onclick: this._openStructuredQuery_handler, children: [
-							{ tag: "A", cls: "uiApp-headerNewMenuItem ", text: ' [+]' }
+							{ tag: "A", cls: "uiApp-headerNewMenuItem", text: ' [+]' }
 						] },
 						{ tag: "DIV", cls: "uiApp-headerMenuItem pull-left", text: i18n.text("Nav.AnyRequest"), onclick: this._openAnyRequest_handler, children: [
-							{ tag: "A", cls: "uiApp-headerNewMenuItem ", text: ' [+]' }
+							{ tag: "A", cls: "uiApp-headerNewMenuItem", text: ' [+]' }
 						] },
 					]}
 				]},

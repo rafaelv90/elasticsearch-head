@@ -26,7 +26,6 @@
 }
 
 .uiApp-headerMenuItem {
-	/* border: 1px solid #bbb; */
 	padding: 10px 15px;
 	margin: 2px 1px 0;
 	height: 14px;
@@ -37,5 +36,11 @@
 }
 
 .uiApp-headerNewMenuItem {
-	color: blue;
+	color: #1e88e5;
+	font-size: 1.2em;
+}
+
+.uiApp-headerCloseMenuItem {
+	font-size: 1.2em;
+	color:  #e53935;
 }

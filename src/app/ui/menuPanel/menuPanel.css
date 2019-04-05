@@ -1,7 +1,7 @@
 .uiMenuPanel {
 	border: 1px solid #b0bec5;
 	position: absolute;
-	background: #90a4ae;
+	background: rgba(0, 0, 0, 0.8);
 	color: white;
 }
 
@@ -10,7 +10,7 @@
 }
 
 .uiMenuPanel LI:hover {
-	background: #546e7a;
+	background: #1e88e5;
 }
 
 .uiMenuPanel LI:last-child {
@@ -20,7 +20,7 @@
 .uiMenuPanel-label {
 	white-space: nowrap;
 	cursor: pointer;
-	padding: 5px 10px;
+	padding: 5px 40px 5px 25px;
 }
 
 .disabled .uiMenuPanel-label {

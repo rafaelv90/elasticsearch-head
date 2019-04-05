@@ -1,7 +1,3 @@
-.uiNodesView {
-	min-width: 400px;
-}
-
 .uiNodesView TH,
 .uiNodesView TD {
 	vertical-align: top;
@@ -15,22 +11,17 @@
 }
 
 .uiNodesView .uiMenuButton .uiButton-content {
-	padding-right: 3px;
-	border-radius: 8px;
-	height: 14px;
+	border-radius: 20px;
+	padding: 2px 4px;
 }
 
 .uiNodesView .uiMenuButton.active .uiButton-content,
 .uiNodesView .uiMenuButton:active .uiButton-content {
-	border-bottom-right-radius: 0px;
-	border-bottom-left-radius: 0px;
+	border-radius: 12px 12px 0 0;
 }
 
-.uiNodesView .uiMenuButton .uiButton-label {
-	padding: 0px 17px 0px 7px;
-}
-
-.uiNodesView-hasAlias {
+.uiNodesView TD.uiNodesView-hasAlias {
+	padding: 5px;
 	text-align: center;
 }
 .uiNodesView-hasAlias.max {
